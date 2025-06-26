@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Biblioteca de Livros</h2>
+
+      <section>
+        <h3>Cadastrar / Editar Livro</h3>
+        <form id="createForm">
+          <input type="hidden" name="id" id="hiddenId" />
+
+          <label for="name">Nome:</label>
+          <input type="text" name="name" required />
+
+          <label for="tipo">Gênero:</label>
+          <input type="text" name="tipo" required />
+
+          <label for="ano">Ano:</label>
+          <input type="number" name="ano" required />
+
+          <button type="submit">Salvar</button>
+          <button type="button" id="cancelarEdicao" style="display: none">
+            Cancelar
+          </button>
+        </form>
+      </section>
+
+      <section>
+        <h3>Lista de Livros</h3>
+        <div class="tabela-wrapper">
+          <table id="tabelaLivros" class="tabela-livros" border="1" cellpadding="5">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Gênero</th>
+                <th>Ano</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <button id="toggleEditarLista">Editar Lista</button>
+
+        <div id="acoesEditar" style="margin-top: 10px; display: none;">
+          <button id="btnEditarSelecionado" disabled>Editar</button>
+          <button id="btnExcluirSelecionado" disabled>Excluir</button>
+        </div>
+
+        <a class="btn-backlogin" href="cadastrar.html">
+          <button>Sair</button>
+        </a>
+      </section>
+
+      <div id="mensagemSucesso" style="margin-top:15px; display:none;"></div>
+    </div>
+
+   <link rel="stylesheet" href="./js/script.js">
+  </body>
+</html>
