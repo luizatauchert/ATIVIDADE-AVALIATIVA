@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Formulários de login, cadastro e edição */
+#formulario {
+    background-color: #ffffffcc;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+#formulario:hover {
+    transform: translateY(-3px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    color: #555;
+    font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #74ebd5;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #74ebd5;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5ec5b6;
+}
+
+/* Botão cancelar edição */
+#cancelarEdicao {
+    width: auto;
+    background-color: #ccc;
+    color: #333;
+    margin-left: 10px;
+    padding: 12px 16px;
+}
+
+#cancelarEdicao:hover {
+    background-color: #bbb;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-text a {
+    color: #5ec5b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+.mensagem {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Seções da página da biblioteca */
+section {
+    margin-top: 40px;
+    background-color: #ffffffcc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Tabela de livros */
+.tabela-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.tabela-livros {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabela-livros th,
+.tabela-livros td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabela-livros th {
+    background-color: #74ebd5;
+    color: #333;
+    font-weight: bold;
+}
+
+.tabela-livros tr:hover {
+    background-color: #f0faff;
+}
+
+/* Botão "Sair" */
+.btn-backlogin {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-backlogin button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-backlogin button:hover {
+    background-color: #e63946;
+}
